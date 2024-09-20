@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7ab7394cb.js" crossorigin="anonymous"></script>
+    <!--  -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css">
+
+    <!--  -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>Pyoo/Home/Add Money</title>
+</head>
+
+<body>
+    <section>
+        <div class="container mx-auto border-b-2 rounded-[24px] bg-[#FFFFFF] ">
+            <div class="navbar bg-base-100 mt-3 md:mt-10">
+                <div class="flex flex-row justify-start gap-5 items-center flex-1">
+                    <img class="w-14 h-14" src="./images/logo.png" alt="">
+                    <div class="flex flex-col gap-2">
+                        <p class="font-extrabold text-xl">$ <span id="taka">45000</span></p>
+                        <p class="font-normal text-[#08080880] text-[14px]">Available Balance</p>
+                    </div>
+                </div>
+                <div class="flex-none flex flex-row gap-4">
+                    <div>
+
+                        <button id="btn-logout" class="btn btn-primary bg-[#0874F2] font-bold"><i
+                                class="fa-regular fa-left-from-bracket text-black"></i> Log Out</button>
+                    </div>
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                            <div class="w-10 rounded-full">
+                                <img alt="Tailwind CSS Navbar component" src="./images/kihjfgn (3).jpg" />
+                            </div>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li>
+                                <a class="justify-between">
+                                    Profile
+                                    <span class="badge">New</span>
+                                </a>
+                            </li>
+                            <li><a>Settings</a></li>
+                            <li><a>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd part -->
+            <div class="mt-12 p-3 md:p-0">
+                <h1 class="font-bold text-xl sm:text-2xl md:text-3xl">🔥 Welcome to Payooo!</h1>
+                <p class="font-normal text-[16px] sm:text-xl md:text-2xl mt-4 text-[#08080880]">Enjoy easy and
+                    convenient financial services with us.<br> Cashout charge is low and </p>
+            </div>
+            <div class="grid grid-cols-3 gap-5 mt-6 px-4 sm:px-0">
+                <!-- card-1 -->
+                <div id="card-1"
+                    class="card bg-base-100 w-fit shadow-xl h-fit flex flex-col justify-center items-center border border-blue-400 sm:w-auto sm:h-auto cursor-pointer bg-blue-100">
+                    <figure class="px-10 pt-10 p-3">
+                        <img src="./images/icons8-wallet-96.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <h2 class="lg:text-xl p-2 font-normal text-[#080808B3] text-center">Add Money</h2>
+                </div>
+                <!-- card-2 -->
+                <div
+                    class="card bg-base-100 w-fit shadow-xl h-fit flex flex-col justify-center items-center border border-blue-400 sm:w-auto sm:h-auto cursor-pointer">
+                    <figure class="px-10 pt-10 p-3">
+                        <img src="./images/icons8-loan-96.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <h2 class="lg:text-xl p-2 font-normal text-[#080808B3]">Cash Out</h2>
+                </div>
+                <!-- card-3 -->
+                <div
+                    class="card bg-base-100 w-fit shadow-xl h-fit flex flex-col justify-center items-center border border-blue-400 sm:w-auto sm:h-auto cursor-pointer">
+                    <figure class="px-10 pt-10 p-3">
+                        <img src="./images/icons8-transfer-money-96.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <h2 class="lg:text-xl p-2 font-normal text-[#080808B3]">Transfer Money</h2>
+                </div>
+                <!-- card-4 -->
+                <div
+                    class="card bg-base-100 w-fit shadow-xl h-fit flex flex-col justify-center items-center border border-blue-400 sm:w-auto sm:h-auto mb-6 cursor-pointer">
+                    <figure class="px-10 pt-10 p-3">
+                        <img src="./images/icons8-bonus-96.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <h2 class="lg:text-xl p-2 font-normal text-[#080808B3]">Get Bonus</h2>
+                </div>
+                <!-- card-5 -->
+                <div
+                    class="card bg-base-100 w-fit shadow-xl h-fit flex flex-col justify-center items-center border border-blue-400 sm:w-auto sm:h-auto mb-6 cursor-pointer">
+                    <figure class="px-10 pt-10 p-3">
+                        <img src="./images/icons8-pay-96.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <h2 class="lg:text-xl p-2 font-normal text-[#080808B3]">Pay Bill</h2>
+                </div>
+                <!-- card-6 -->
+                <div
+                    class="card bg-base-100 w-fit shadow-xl h-fit flex flex-col justify-center items-center border border-blue-400 sm:w-auto sm:h-auto mb-6 cursor-pointer">
+                    <figure class="px-10 pt-10 p-3">
+                        <img src="./images/icons8-transactions-96.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <h2 class="lg:text-xl p-2 font-normal text-[#080808B3]">Transactions</h2>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- add money part -->
+
+    <section>
+        <div class="container mx-auto mt-12 px-4 sm:px-0">
+            <div>
+                <h1 class="font-bold text-xl sm:text-2xl md:text-3xl">Add Money</h1>
+            </div>
+            <div class="mt-12">
+                <div class="card bg-base-100 w-full  shrink-0 shadow-2xl">
+                    <div class="card-body">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text font-bold">Select A Bank</span>
+                            </div>
+                            <select id="banks" class="select select-bordered">
+                                <option disabled selected>Select Bank</option>
+                                <option>Bangladesh Bank</option>
+                                <option value="2">Ogroni Bank</option>
+                                <option>Brac Bank</option>
+                                <option>City Bank</option>
+                                <option>Fast Security Bank</option>
+                            </select>
+                        </label>
+                        <!--  -->
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text font-bold">Bank Account Number</span>
+                            </label>
+                            <input id="account" type="text" placeholder="Enter 11 digit account number"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text font-bold">Amount to Add</span>
+                            </label>
+                            <input id="amount" type="number" placeholder="Add Amount to deposit"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text font-bold">Pin Number</span>
+                            </label>
+                            <input id="pin" type="password" placeholder="4 Digit Pin" class="input input-bordered"
+                                required />
+                        </div>
+                        <div class="form-control mt-6">
+                            <button onclick="my_modal_1.showModal()" id="add_money"
+                                class="btn btn-primary rounded-[42px]">Add Money</button>
+
+                            
+                            <dialog id="my_modal_1" class="modal">
+                                <div class="modal-box border border-green-500 rounded-[42px]">
+                                    <h3 class="text-lg font-bold text-green-400 text-center">Congratulation <i class="fa-regular fa-badge-check"></i></h3>
+                                    <p class="py-4 text-center">You successfully added Money to your account</p>
+                                    <p class="text-green-400 font-bold text-center">AC no: <span class="text-black font-semibold">011233*****</span></p>
+                                    <div class="modal-action">
+                                        <form method="dialog">
+                                            <button class="btn border border-green-400">Close</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="./main Java Scripts/add.js"></script>
+
+
+</body>
+
+</html>
